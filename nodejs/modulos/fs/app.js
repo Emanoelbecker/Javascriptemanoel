@@ -1,4 +1,5 @@
-const fs = require ('fs')
+//const fs = require ('fs')
+import fs from 'fs'
 
 fs.readFile('example.txt', 'utf8', (conteudo_do_arquivo, erro) => {
   if (erro) {
