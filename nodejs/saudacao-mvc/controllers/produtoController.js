@@ -6,7 +6,7 @@ module.exports = {
   },
   cadastrar: (req, res) => {
     const { nome, valor_unitario, descricao, id } = req.body;
-    const mensagemCadastro = produtosModel.cadastrar(id, descricao, quantidade, valor_unitario);
+    const mensagemCadastro = produtosModel.cadastrar(id, descricao, nome, valor_unitario);
     res.send(mensagemCadastro);
   },
   produtos: (req, res) => {
